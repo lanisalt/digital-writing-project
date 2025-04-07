@@ -9,12 +9,52 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play story 1.</tw-noscript></noscript></tw-story>
-<tw-storydata name="story 1" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="D12FCDCA-8821-4366-A006-BA41E4EB4029" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="digital writing" tags="" position="550,200" size="100,100">good morning! its 6am and your alarm for uni has gone off, are you going to [[get up]] or [[stay in bed]] for a little while longer?</tw-passagedata><tw-passagedata pid="2" name="get up" tags="" position="550,325" size="100,100">you roll out of bed and stretch. time to pick an outfit! the weather will be 20 degrees and partly cloudy, what will you wear?
-your favourite [[jeans]], sneakers and a cute top
-a vintage [[dress]] with stockings and ankle boots
+<tw-storydata name="story 1" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="D12FCDCA-8821-4366-A006-BA41E4EB4029" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
+tw-story {
+  font-family: 'Homemade Apple', cursive;
+  color: #FFF;
+  background-color: #000;
+}
 
-</tw-passagedata><tw-passagedata pid="3" name="stay in bed" tags="" position="675,325" size="100,100">you stay in bed for another 15 minutes. </tw-passagedata><tw-passagedata pid="4" name="jeans" tags="" position="550,450" size="100,100">practical and comfy! are you bringing a jacket?</tw-passagedata><tw-passagedata pid="5" name="dress" tags="" position="675,450" size="100,100"></tw-passagedata></tw-storydata>
+.story-image {
+  width: 100%;
+}
+
+tw-link, tw-link:link, tw-link:visited, tw-link.visited {
+  color: #FFF;
+  text-decoration: underline;
+}
+tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+tw-passage {
+  padding-bottom: 200px;}
+
+img {  /* this selects all image (img) elements */
+  width: 100%;
+}
+
+.story-image-smaller {  /* this selects all elements with the story-image-smaller class not just images */
+  width: 50%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="digital writing" tags="" position="350,250" size="100,100">good morning! your alarm just rang, it&#39;s time to get ready for uni! do you [[get up]] or [[stay in bed]]?</tw-passagedata><tw-passagedata pid="2" name="get up" tags="" position="287.5,375" size="100,100">you roll out of bed and stretch. time to get dressed! what do you want to wear?
+
+your favourite [[jeans]] with a black turtleneck
+
+a vintage [[dress]] and some ankle boots
+</tw-passagedata><tw-passagedata pid="3" name="stay in bed" tags="" position="412.5,375" size="100,100">you stay in bed for a little longer.
+
+&lt;img src=&quot;./images/honkshoo.jpg&quot; alt=&quot;honk shoo&quot; /&gt;&lt;img src=&quot;./images/honkshoo2.jpg&quot; alt=&quot;honk shoo&quot; /&gt;&lt;img src=&quot;./images/honkshoo3.jpg&quot; alt=&quot;honk shoo&quot; /&gt;</tw-passagedata><tw-passagedata pid="4" name="jeans" tags="" position="287.5,500" size="100,100">lol this u?
+&lt;img class=&quot;story-image&quot; src=&quot;./images/dwayne.png&quot; alt=&quot;dwayne&quot; /&gt;
+&lt;audio src=&quot;./audio/whistles.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
+
+are you going to [[change]] or [[stay like this]]
+</tw-passagedata><tw-passagedata pid="5" name="dress" tags="" position="412.5,500" size="100,100">wow! looking good (click-replace: &quot;good&quot;) [snazzy] (click-replace: &quot;snazzy&quot;) [stylish] (click-replace: &quot;stylish&quot;) [fab] (click-append: &quot;fab&quot;) [, diva!]
+
+time to [[head out]]</tw-passagedata><tw-passagedata pid="6" name="head out" tags="" position="412.5,625" size="100,100">you grab your keys and walk outside, closing the door behind you.</tw-passagedata><tw-passagedata pid="7" name="change" tags="" position="287.5,625" size="100,100">good choice. you go with the [[dress]] instead.</tw-passagedata><tw-passagedata pid="8" name="stay like this" tags="" position="162.5,625" size="100,100">okay...
+
+you [[head out]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
